@@ -13,11 +13,9 @@ jobs:
 workflows:
   version: 2
   commit:
-    name: "commit"
     jobs:
       - test
   approval:
-    name: "approval"
     jobs:
       - approve_build:
           type: approval
@@ -25,7 +23,6 @@ workflows:
           requires:
             - approve_build
   nightly:
-    name: "nightly"
     triggers:
       - schedule:
           cron: "0 0 * * *"
