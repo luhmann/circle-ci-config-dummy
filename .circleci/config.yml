@@ -15,7 +15,13 @@ workflows:
   commit:
     jobs:
       - test
-  # Workflow for running e2e-tests at 12 am every night
+  approval:
+    jobs:
+      - approve_build:
+          type: approval
+      - test:
+          requires:
+            - approve_build
   nightly:
     triggers:
       - schedule:
