@@ -1,0 +1,20 @@
+{
+  "name": "circle-ci-config-dummy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Testing Testing!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luhmann/circle-ci-config-dummy.git"
+  },
+  "keywords": [],
+  "author": "Jan Florian Dietrich <jfd@daenen4.de> (http://www.daenen4.de/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luhmann/circle-ci-config-dummy/issues"
+  },
+  "homepage": "https://github.com/luhmann/circle-ci-config-dummy#readme"
+}
